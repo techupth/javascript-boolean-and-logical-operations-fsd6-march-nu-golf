@@ -6,7 +6,7 @@ let johnAttendedDiscountEventTime = 2
 let johnMember = 'Gold'
 // Start coding here
 let lastMonthPaidMoreThan4000 = johnLastMonthPay > 4000;
-let isWeekday = johnLastBuyDate == 'Friday'||johnLastBuyDate == 'Monday';
+let isWeekday = johnLastBuyDate != 'Sunday'&&johnLastBuyDate != 'Saturday';
 let hasBoughtProductFromITCategory = johnBoughtProductFromITCategory == true;
 let hasAttendedDiscountEvent = johnAttendedDiscountEventTime == 0;
 let isPlatinum = johnMember == 'Platinum';
